@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infusion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div><p class="eyebrow">60 SECOND SURVIVAL</p><h1>INFUSION</h1></div>
+      <button id="sound" aria-label="Toggle sound">SOUND: ON</button>
+    </header>
+    <section class="game-wrap">
+      <canvas id="game" width="1280" height="720" aria-label="Infusion game arena"></canvas>
+      <div class="hud">
+        <div><span>TIME</span><strong id="time">60</strong></div>
+        <div><span>SCORE</span><strong id="score">0000</strong></div>
+        <div><span>COLOR</span><strong id="energy">0 / 8</strong></div>
+        <div><span>SPECIAL [SPACE]</span><strong id="special">LOCKED</strong></div>
+      </div>
+      <div class="powers" id="powers" aria-label="Unlocked powers"></div>
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <p class="kicker">BRING THE WORLD BACK</p>
+          <h2 id="overlay-title">INFUSION</h2>
+          <p id="overlay-copy">Move with WASD or arrow keys. Aim with your mouse. Your white attack fires automatically. Press Space after unlocking a color to use its special attack.</p>
+          <button id="start">BEGIN BLOOM</button>
+          <p class="tiny">Survive 60 seconds. Defeat enemies. Unlock red, blue, yellow, and green.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
